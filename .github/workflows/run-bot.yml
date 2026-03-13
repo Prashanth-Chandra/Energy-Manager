@@ -2,7 +2,7 @@ name: Energy Bot
 
 on:
   schedule:
-    - cron: "0 * * * *"  # every hour at minute 0 UTC
+    - cron: "*/30 * * * *"  # every 30 minutes UTC
   workflow_dispatch:
 
 jobs:
@@ -27,3 +27,10 @@ jobs:
         env:
           SESSION_COOKIE: ${{ secrets.SESSION_COOKIE }}
         run: python main.py
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-logs
+          path: main.logs
