@@ -1,0 +1,29 @@
+name: Energy Bot
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # every hour at minute 0 UTC
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install requests
+          fi
+
+      - name: Run bot
+        env:
+          SESSION_COOKIE: ${{ secrets.SESSION_COOKIE }}
+        run: python main.py
