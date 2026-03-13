@@ -1,0 +1,43 @@
+[13/03/26 18:19:55] [INFO] - Fetching hydrogen prices
+[13/03/26 18:19:56] [INFO] - Latest hydrogen price: 70.18
+[13/03/26 18:20:01] [INFO] - Hydrogen price meets sell threshold 70.00
+[13/03/26 18:20:02] [INFO] - Hydrogen storage IDs found: 3
+[13/03/26 18:20:07] [INFO] - Selling hydrogen for 3 units
+[13/03/26 18:20:08] [INFO] - Hydrogen sale result - sold: 9.005414648047877, income: 632, price: 70.18
+[13/03/26 18:20:13] [INFO] - Refueling plants after sale
+[13/03/26 18:20:13] [INFO] - Waiting 180 seconds before bringing plants online
+[13/03/26 18:23:13] [INFO] - Setting production plants online
+[13/03/26 18:23:14] [INFO] - Fetching oil prices
+[13/03/26 18:23:15] [INFO] - Latest oil price: 2.76
+[13/03/26 18:23:18] [INFO] - Oil price at or below buy max 4.00
+[13/03/26 18:23:18] [INFO] - Oil purchase capacity: 279
+[13/03/26 18:23:21] [INFO] - Buying 279 kg of oil
+[13/03/26 18:23:22] [INFO] - Oil buy result - bought: 279.0, cost: 770, price: 2.759856630824373
+[13/03/26 18:23:22] [INFO] - Total amount spent on oil: 770
+[13/03/26 18:44:55] [INFO] - Latest hydrogen price: 26.6
+[13/03/26 18:44:56] [INFO] - Hydrogen price below threshold; skipping sell sequence
+[13/03/26 18:44:56] [INFO] - Fetching oil prices
+[13/03/26 18:44:57] [INFO] - Latest oil price: 3.74
+[13/03/26 18:44:58] [INFO] - Oil price above threshold; skipping buy
+[13/03/26 18:45:17] [INFO] - Latest hydrogen price: 26.6
+[13/03/26 18:45:19] [INFO] - Hydrogen price meets sell threshold 5.00
+[13/03/26 18:45:21] [INFO] - Selling hydrogen for 3 units
+[13/03/26 18:45:21] [WARNING] - Hydrogen sale response could not be parsed
+[13/03/26 18:45:23] [INFO] - Refueling plants after sale
+[13/03/26 18:45:24] [INFO] - Waiting for discharging to finish before bringing plants online
+[13/03/26 18:45:24] [INFO] - Discharge complete; setting production plants online
+[13/03/26 18:45:25] [INFO] - Fetching oil prices
+[13/03/26 18:45:25] [INFO] - Latest oil price: 3.74
+[13/03/26 18:45:27] [INFO] - Oil price above threshold; skipping buy
+[13/03/26 18:47:40] [INFO] - Latest hydrogen price: 26.6
+[13/03/26 18:47:42] [INFO] - Hydrogen price meets sell threshold 5.00
+[13/03/26 18:47:44] [INFO] - Selling hydrogen
+[13/03/26 18:47:44] [INFO] - Hydrogen sale result - sold: 56.95488721804511, income: 1515, price: 26.6
+[13/03/26 18:47:46] [INFO] - Refueling plants after sale
+[13/03/26 18:47:47] [INFO] - Waiting for discharging to finish before bringing plants online
+[13/03/26 18:47:47] [INFO] - Plants still discharging (check 1); rechecking in 5s
+[13/03/26 18:47:59] [INFO] - Plants still discharging (check 2); rechecking in 5s
+[13/03/26 18:48:04] [INFO] - Discharge complete; setting production plants online
+[13/03/26 18:48:05] [INFO] - Fetching oil prices
+[13/03/26 18:48:05] [INFO] - Latest oil price: 3.74
+[13/03/26 18:48:07] [INFO] - Oil price above threshold; skipping buy
