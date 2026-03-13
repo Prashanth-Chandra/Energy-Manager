@@ -2,7 +2,7 @@ name: Energy Bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # every 30 minutes UTC
+    - cron: "50 * * * *"  # every hour at :50 UTC (20 past the hour IST)
   workflow_dispatch:
 
 jobs:
