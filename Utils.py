@@ -9,15 +9,15 @@ BASE_HEADERS = {
 }
 
 
-def refuelPlants():
+def refuelPlants(fuel_type="oil", pct="100"):
     url = "https://energymanagergame.com/fuel-management.php"
-    params = {"mode": "do", "pct": "100", "type": "oil"}
+    params = {"mode": "do", "pct": str(pct), "type": fuel_type}
     response = requests.get(url, params=params, headers=BASE_HEADERS)
     print("Status Code:", response.status_code)
     if response.status_code == 200:
-        print("Refuel successful")
+        print(f"Refuel successful for {fuel_type} ({pct}%)")
     else:
-        print("Refuel failed:", response.status_code)
+        print(f"Refuel failed for {fuel_type}:", response.status_code)
     print("----------------------------------")
 
 
